@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+.credit{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.Title{
+    text-align: center;
+    margin: 20px;
+}
