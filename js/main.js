@@ -3,7 +3,7 @@ window.addEventListener("load", main())
 function main(){
     document.body.innerHTML = `
     <h1 class="Title">Password Generator</h1>
-    <div class="credit"><h5>made by <a href="https://beaverbeg.cf" target="_blank">beaverbeg</a></h5></div>
+    <div class="credit"><h5>made by <a href="https://www.beaverbeg.xyz" target="_blank">beaverbeg</a></h5></div>
     <form action="" method="post" name="Form" onsubmit="return gen()"></form>
     <div class="inputs">
         <div class="input-div lenght-div"> 
