@@ -10,7 +10,24 @@ body{
     left: 0;
     bottom: 0;
 }
+.inputs{
+    text-align: center;
+}
+.gen-button-div{
+    margin-top: 20px;
+    text-align: center;
+}
+#result{
+    margin: 5px;
+}
+.result-div{
+    text-align: center;     
+}
 .Title{
     text-align: center;
     margin: 20px;
+}
+.settings-div-holder{
+    margin: 10px;
+    
 }
