@@ -31,3 +31,11 @@ body{
     margin: 10px;
     
 }
+.copy{
+    background-color: transparent;
+    border: 1px solid #484848;
+}
+.copy-img{
+    width: 20px;
+    height: 25px;
+}

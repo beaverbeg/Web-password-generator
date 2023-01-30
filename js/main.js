@@ -10,6 +10,10 @@ function errpop(ye, r){
         res.style.color = "black";
     }
 }
+function copy(){
+    var result = document.getElementById("result").innerHTML;
+    navigator.clipboard.writeText(result);
+}
 function gen(){
     var specialChecked = document.getElementsByClassName("special-c")[0].checked,
         numbersChecked = document.getElementsByClassName("num")[0].checked,
@@ -68,4 +72,5 @@ function gen(){
 
     console.log(lenght);
 } 
+//show default result when page is loaded first time
 gen()
