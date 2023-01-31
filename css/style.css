@@ -13,15 +13,40 @@ body{
 .inputs{
     text-align: center;
 }
-.gen-button-div{
-    margin-top: 20px;
-    text-align: center;
+.gen-button{
+    background-color: transparent;
+    border: 1px solid #484848;
+    margin: 5px;
+    cursor: pointer;
+    float: left;
+}
+.gen-img{
+    width: 25px;
+    height: 25px;
 }
 #result{
     margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .result-div{
-    text-align: center;     
+    background-color: rgba(123, 123, 123, 0.108);
+    border-bottom: 2px solid green;
+    min-width: 600px;
+    max-width: 100000px;
+    height: 43px;
+    text-align: center;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 50%);
+    margin-top: 50px;
+}
+.result-div p, button{
+    display: inline-block;
+}
+.result-div .copy{
+    float: left;
+    margin: 5px;
 }
 .Title{
     text-align: center;
@@ -34,6 +59,7 @@ body{
 .copy{
     background-color: transparent;
     border: 1px solid #484848;
+    cursor: pointer;
 }
 .copy-img{
     width: 20px;

@@ -1,11 +1,13 @@
 function errpop(ye, r){
     var res = document.getElementById("result");
+    var resdiv = document.getElementById("result-div")
     if(ye==true){
         res.style.color = "red";
-        res.style.fontSize = "16px";
+        resdiv.style.borderBottom = "2px solid red";
         res.innerHTML = `${r}`;
     }
     else if(ye==false){
+        resdiv.style.borderBottom = "2px solid green";
         res.style.fontSize = "30px";
         res.style.color = "black";
     }
@@ -31,6 +33,7 @@ function gen(){
         special = ",./;':{}[]~+()*&^%$#@!=+-_`",
         passChar = "";
     
+
     if(specialChecked==true){
         ch += 1;
         passChar = passChar + special;
@@ -53,7 +56,11 @@ function gen(){
         return;
     }
     else if(lenght<=0){
-        errpop(true, "Amount of characters must be higher than 0.");
+        errpop(true, "Min characters: 1");
+        return;
+    }
+    else if(lenght>50){
+        errpop(true, "Max characters: 50");
         return;
     }
     else{
@@ -72,5 +79,4 @@ function gen(){
 
     console.log(lenght);
 } 
-//show default result when page is loaded first time
 gen()
